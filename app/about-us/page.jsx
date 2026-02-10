@@ -9,7 +9,7 @@ export default function AboutUs() {
   return (
     <main className="bg-white">
       {/* 1 hero  */}
-      <section className="relative h-[85vh] md:h-screen w-full flex items-center overflow-hidden">
+      <section className="relative h-screen w-full flex items-center overflow-hidden">
         {/* 🔹 Step 1: Background Image */}
         <div className="absolute inset-0  z-0">
           <Image
@@ -85,8 +85,8 @@ export default function AboutUs() {
 
           <FadeIn direction="right">
             <h2 className="text-3xl md:text-5xl font-black text-[#12066a] leading-tight">
-              Expert Guidance for a <br />{" "}
-              <span className="text-[#997819]">Regulated World.</span>
+              Expert Guidance for a 
+              <span className="text-[#997819]"> Regulated World.</span>
             </h2>
             <div className="mt-8 space-y-6 text-zinc-600 leading-relaxed font-medium">
               <p>
@@ -122,7 +122,7 @@ export default function AboutUs() {
       </section>
 
       {/* 3. CORE VALUES - Trust Builders */}
-      <section className="py-24 bg-zinc-50 px-6">
+      <section className="py-14 bg-zinc-50 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-black text-[#12066a]">

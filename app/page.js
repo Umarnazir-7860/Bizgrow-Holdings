@@ -204,11 +204,11 @@ export default function HomePage() {
         <Image  
         src="/experts-home.jpg"
         fill
-        className="object-cover "
+        className="object-cover hidden md:block"
         
         />
         {/* Black Overlay Effect */}
-          <div className="absolute  inset-0 bg-black/70 backdrop-blur-[1px]" />
+          <div className="hidden md:block absolute inset-0 bg-black/70 backdrop-blur-[1px]" />
         <div className="absolute top-10 right-0 text-[4rem] md:text-[15rem] font-black text-white/10 select-none leading-none -translate-y-1/4">
           BIZGROW
         </div>
@@ -248,14 +248,14 @@ export default function HomePage() {
         </div>
       </section>
       {/* Testimonials  */}
-      <section className="py-24 bg-white px-16">
+      <section className="py-24 bg-white px-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-center text-center mb-20">
             <FadeIn direction="none">
               <span className="text-[#997819] font-black uppercase tracking-[0.4em] text-xs">
                 Success Stories
               </span>
-              <h2 className="text-4xl md:text-6xl font-black text-[#12066a] mt-4 leading-tight">
+              <h2 className="text-[30px] md:text-6xl font-black text-[#12066a] mt-4 leading-tight">
                 Trusted by Leading <br />
                 <span className="text-[#997819]">Organizations</span>
               </h2>
