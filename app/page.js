@@ -96,14 +96,14 @@ export default function HomePage() {
       {/* About Us  */}
       <section className="relative mt-10 z-30 px-6 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-[#12066a] rounded-[3rem] p-8 md:p-12 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-12 border-4 border-white">
+          <div className="bg-[#12066a] rounded-[3rem] p-8 md:p-12 shadow-2xl flex flex-col md:flex-row items-start justify-between gap-12 border-4 border-white">
             {/* Stat 1 */}
             <div className="flex items-center gap-5">
               <div className="bg-white/10 p-4 rounded-2xl">
                 <Trophy className="text-white w-8 h-8" />
               </div>
               <div>
-                <h4 className="text-white text-3xl font-black  leading-none">
+                <h4 className="text-white text-3xl font-black leading-none">
                   100+
                 </h4>
                 <p className="text-blue-200 text-xs font-bold uppercase tracking-widest mt-1">
@@ -199,17 +199,17 @@ export default function HomePage() {
         </div>
       </section>
       {/* How we work */}
-      <section className="py-24 h-screen bg-[#12066a] relative overflow-hidden">
+      <section className="py-24 min-h-screen lg:h-auto bg-[#12066a] relative overflow-hidden">
         {/* Decorative Background Text */}
         <Image  
         src="/experts-home.jpg"
         fill
-        className="object-cover"
+        className="object-cover "
         
         />
         {/* Black Overlay Effect */}
-          <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]" />
-        <div className="absolute top-10 right-0 text-[15rem] font-black text-white/10 select-none leading-none -translate-y-1/4">
+          <div className="absolute  inset-0 bg-black/70 backdrop-blur-[1px]" />
+        <div className="absolute top-10 right-0 text-[4rem] md:text-[15rem] font-black text-white/10 select-none leading-none -translate-y-1/4">
           BIZGROW
         </div>
 
@@ -223,7 +223,7 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {steps.map((step, i) => (
               <FadeIn key={i} delay={i * 0.2} direction="right">
                 <div className="relative group">

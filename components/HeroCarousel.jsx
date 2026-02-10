@@ -74,7 +74,7 @@ export default function HeroCarousel() {
             </p>
             <a
               href={slide.buttonLink}
-              className="bg-[#12066a] hover:bg-[#997819] text-white font-bold py-3 px-8 rounded-full text-lg md:text-xl transition-all duration-300 shadow-xl active:scale-95"
+              className=" bg-[#12066a] hover:bg-[#997819] text-white font-bold py-3 px-8 rounded-full text-lg md:text-xl transition-all duration-300 shadow-xl active:scale-95"
             >
               {slide.buttonText}
             </a>
@@ -85,13 +85,13 @@ export default function HeroCarousel() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-3 rounded-full z-20 transition-all duration-300 backdrop-blur-sm"
+        className="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-3 rounded-full z-20 transition-all duration-300 backdrop-blur-sm"
       >
         <ChevronLeft size={30} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-3 rounded-full z-20 transition-all duration-300 backdrop-blur-sm"
+        className="hidden md:block absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 text-white p-3 rounded-full z-20 transition-all duration-300 backdrop-blur-sm"
       >
         <ChevronRight size={30} />
       </button>

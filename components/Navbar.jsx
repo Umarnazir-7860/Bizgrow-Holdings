@@ -135,7 +135,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-4 inset-x-0 mx-auto rounded-2xl max-w-7xl z-50 bg-white backdrop-blur-xl border-1 border-[#12066a]">
+    <nav className="fixed top-4 inset-x-0 mx-2 md:mx-auto rounded-2xl max-w-7xl z-50 bg-white backdrop-blur-xl border-1 border-[#12066a]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex py-3 items-center justify-between">
           <Link href="/">
@@ -159,7 +159,7 @@ export default function Navbar() {
               About
             </Link>
 
-               <Link href="/about-us" className="hover:text-[#997819] transition">
+               <Link href="/our-mission" className="hover:text-[#997819] transition">
               Our Mission
             </Link> 
 
@@ -170,7 +170,7 @@ export default function Navbar() {
             >
               <Link href="/our-digital-services">
                 <button 
-                  className="flex items-center gap-1 text-black hover:text-[#997819] outline-none"
+                  className=" flex items-center gap-1 text-black hover:text-[#997819] outline-none"
                   aria-expanded={open}
                   aria-haspopup="true"
                 >
@@ -232,7 +232,7 @@ export default function Navbar() {
             </Link>
             <Link
               href="/contact-us"
-              className="hover:text-[#997819] transition"
+              className="hover:text-[#997819]  transition"
             >
               Contact
             </Link>
@@ -240,14 +240,14 @@ export default function Navbar() {
 
           {/* THEME & MOBILE BUTTON */}
           <div className="flex items-center gap-4">
-            <button className="text-white font-semibold border border-[#997819] bg-[#12066a] px-3 py-1.5 rounded-2xl">
+            <button className="hidden md:block text-white font-semibold border border-[#997819] bg-[#12066a] px-3 py-1.5 rounded-2xl">
             Contact Us
             </button>
             <button
               aria-label={mobileOpen ? "Close Menu" : "Open Menu"}
               aria-expanded={mobileOpen}
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden text-white text-2xl mx-4 p-2" 
+              className="lg:hidden text-black text-2xl mx-4 p-2" 
             >
               {mobileOpen ? "✕" : "☰"}
             </button>
@@ -265,9 +265,9 @@ export default function Navbar() {
             transition={{ type: "tween", duration: 0.3 }}
             className="fixed top-0 left-0 w-full h-screen bg-white z-[60] overflow-y-auto outline-none"
           >
-            <div className="flex items-center justify-between px-6 h-16 border-b border-white/10 sticky top-0 bg-black z-10">
+            <div className="flex items-center justify-between  px-6 h-16 border-b border-white/10 sticky top-0 bg-[#12066a] z-10">
               <Image
-                src="/BizGrow-digital-logo.png"
+                src="/logo.webp"
                 alt="BizGrow Digital Logo"
                 width={100}
                 height={35}
@@ -307,7 +307,7 @@ export default function Navbar() {
                 >
                   Services
                   <span
-                    className={`text-orange-500 transition-transform ${
+                    className={`text-[#12066a] transition-transform ${
                       mobileServicesOpen ? "rotate-180" : ""
                     }`}
                   >
@@ -330,7 +330,7 @@ export default function Navbar() {
                           onClick={() => setMobileOpen(false)}
                           className="flex items-center gap-4 py-3 border-b border-gray-100 last:border-0"
                         >
-                          <div className="text-orange-500 text-lg">
+                          <div className="text-[#12066a] text-lg">
                             {service.icon}
                           </div>
                           <span className="text-black text-base font-semibold">
