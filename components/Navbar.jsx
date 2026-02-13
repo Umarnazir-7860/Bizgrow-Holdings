@@ -168,7 +168,7 @@ export default function Navbar() {
               onMouseEnter={() => setOpen(true)}
               onMouseLeave={() => setOpen(false)}
             >
-              <Link href="/our-digital-services">
+              <Link href="/our-services">
                 <button 
                   className=" flex items-center gap-1 text-black hover:text-[#997819] outline-none"
                   aria-expanded={open}

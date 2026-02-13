@@ -47,7 +47,7 @@ export default function Footer() {
           <div>
             <h4 className="text-[#997819] font-black uppercase tracking-widest text-sm mb-8">Navigation</h4>
             <ul className="space-y-4">
-              {["Home", "About Us", "Our Mission", "Blogs", "Contact Us"].map((item) => (
+              {["Home", "About Us", "Our Mission","Our Services", "Blogs", "Contact Us"].map((item) => (
                 <li key={item}>
                   <Link href={`/${item.toLowerCase().replace(" ", "-")}`} className="text-blue-100/70 hover:text-white hover:pl-2 transition-all duration-300 flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#997819]" /> {item}
