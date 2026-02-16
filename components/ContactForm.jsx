@@ -39,9 +39,9 @@ const ContactForm = () => {
   const labelClasses = "absolute left-0 top-5 text-zinc-400 pointer-events-none transition-all duration-500 peer-focus:-top-6 peer-focus:text-[#997819] peer-focus:text-[10px] peer-not-placeholder-shown:-top-6 peer-not-placeholder-shown:text-[10px] uppercase font-black tracking-[0.2em]";
 
   return (
-    <div className="p-8 md:p-14 bg-white/80 backdrop-blur-xl border border-zinc-100 rounded-[4rem] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.08)] relative overflow-hidden">
+    <div className="p-8 md:p-14 bg-white/80 backdrop-blur-xl border border-[#12066a] rounded-[4rem] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.08)] relative overflow-hidden">
       {/* 🔹 Subtle Decorative Background Gradient */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-[#997819]/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+      <div className="absolute top-0 right-0 w-64 h-54 bg-[#997819]/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
       
       <form onSubmit={handleSubmit} className="relative z-10 space-y-12">
         <div className="mb-10">
@@ -91,7 +91,7 @@ const ContactForm = () => {
         <div className="relative pt-4" onFocus={() => setActiveField('msg')} onBlur={() => setActiveField(null)}>
           <textarea rows={4} required className={`${inputClasses} resize-none`} placeholder="Message"></textarea>
           <label className={labelClasses}>Briefly describe your objectives</label>
-          <div className={`absolute bottom-0 left-0 h-[2px] bg-[#997819] transition-all duration-700 ${activeField === 'msg' ? 'w-full' : 'w-0'}`}></div>
+          <div className={`absolute bottom-0 left-0 h-[2px]  transition-all duration-700 ${activeField === 'msg' ? 'w-full' : 'w-0'}`}></div>
         </div>
 
         {/* Submit Button */}

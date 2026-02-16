@@ -40,14 +40,14 @@ export default function Navbar() {
     {
       title: "SIA ACS",
       description: "Brand storytelling & visuals",
-      href: "/creative-content",
+      href: "/sia-acs",
       icon: <FaPaintBrush />,
     },
   
        {
       title: "COP 119",
       description: "High-converting email campaigns",
-      href: "/email-marketing",
+      href: "/cop-119-labour-provision",
       icon: <FaEnvelope />,
     },
 

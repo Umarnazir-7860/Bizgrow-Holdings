@@ -3,63 +3,71 @@
 import React from "react";
 import Image from "next/image";
 import FadeIn from "@/components/MotionWrapper";
-import { ShieldCheck, Target, Users, Award, CheckCircle2, ArrowRight, PhoneCall } from "lucide-react";
+import {
+  ShieldCheck,
+  Target,
+  Users,
+  Award,
+  CheckCircle2,
+  ArrowRight,
+  PhoneCall,
+} from "lucide-react";
 
 export default function AboutUs() {
   return (
     <main className="bg-white">
-      {/* 1 hero  */}
+      {/* 🔹 1. HERO SECTION (Consistent Signature Style) */}
       <section className="relative h-screen w-full flex items-center overflow-hidden">
         {/* 🔹 Step 1: Background Image */}
-        <div className="absolute inset-0  z-0">
+        <div className="absolute inset-0 z-0">
           <Image
-            src="/about-hero.webp" // Aapki generated image ka path
-            alt="BizGrow Corporate"
+            src="/about-hero.webp" // About page ki specific corporate image
+            alt="BizGrow Holdings Corporate"
             fill
             className="object-cover"
             priority
           />
-          {/* Black Overlay Effect */}
-          <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]" />
+          {/* Black Overlay Effect for Text Readability */}
+          <div className="absolute inset-0 bg-black/75 backdrop-blur-[1px]" />
         </div>
 
-        {/* 🔹 Step 3: Large Watermark Text (Middle Layer) */}
+        {/* 🔹 Step 2: Large Watermark Text (Middle Layer) */}
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none select-none z-10">
-          <h2 className="text-[15rem] md:text-[15rem] font-black text-white/[0.1] leading-none uppercase">
-            About
+          <h2 className="text-[12rem] md:text-[20rem] font-black text-white/[0.05] leading-none uppercase tracking-tighter">
+            ABOUT
           </h2>
         </div>
 
-        {/* 🔹 Step 4: Actual Content (Top Layer) */}
+        {/* 🔹 Step 3: Actual Content (Top Layer) */}
         <div className="max-w-7xl mx-auto px-6 relative z-20 w-full">
-          
-            <div className="max-w-4xl">
-                <FadeIn direction="right" duration="0.4">
-              <span className="text-[#997819] font-black uppercase tracking-[0.4em] text-xs md:text-sm">
+          <div className="max-w-4xl">
+            <FadeIn direction="right" duration="0.4">
+              <span className="text-[#997819] font-black uppercase tracking-[0.4em] mt-20 text-xs md:text-sm">
                 Who We Are
               </span>
-                </FadeIn>
-             
-              <FadeIn direction="right" duration="0.6">
-              <h1 className="text-4xl md:text-7xl font-black text-white mt-6 leading-[1.1]">
+            </FadeIn>
+
+            <FadeIn direction="right" duration="0.6">
+              <h1 className="text-4xl md:text-7xl font-black text-white mt-6 leading-[1.1] tracking-tighter">
                 Driving Business <br />
                 <span className="text-[#997819]">Excellence</span> Across UK
               </h1>
-              </FadeIn>
-              <FadeIn direction="right" duration="0.8">
+            </FadeIn>
+
+            <FadeIn direction="right" duration="0.8">
               <p className="mt-8 text-blue-100/80 text-lg md:text-2xl max-w-2xl leading-relaxed font-medium">
                 BizGrow Holdings is a premier consultancy firm dedicated to
                 helping organizations achieve industry-leading certifications
-                and sustainable growth.
+                and sustainable growth through strategic compliance.
               </p>
-              </FadeIn>
+            </FadeIn>
 
-              {/* Optional: Small line decor */}
-              <div className="mt-10 w-24 h-1.5 bg-[#997819] rounded-full" />
-            </div>
-         
+            {/* Signature Decor Line */}
+            <FadeIn direction="right" duration="1.0">
+              <div className="mt-12 w-32 h-2 bg-[#997819] rounded-full" />
+            </FadeIn>
+          </div>
         </div>
-
       </section>
 
       {/* 2. THE VISION - Image + Text Content */}
@@ -85,15 +93,14 @@ export default function AboutUs() {
 
           <FadeIn direction="right">
             <h2 className="text-3xl md:text-5xl font-black text-[#12066a] leading-tight">
-              Expert Guidance for a 
+              Expert Guidance for a
               <span className="text-[#997819]"> Regulated World.</span>
             </h2>
             <div className="mt-8 space-y-6 text-zinc-600 leading-relaxed font-medium">
               <p>
                 Founded on the principles of integrity and expertise, BizGrow
                 Holdings has emerged as a trusted partner for security firms and
-                construction companies seeking SIA ACS and ISO
-                Certifications.
+                construction companies seeking SIA ACS and ISO Certifications.
               </p>
               <p>
                 We don't just provide a checklist; we integrate quality
@@ -209,7 +216,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-       {/* 5 CTA Section with Background Watermark */}
+      {/* 5 CTA Section with Background Watermark */}
       <section className="py-20 px-6 bg-white">
         <FadeIn direction="up">
           <div className="max-w-7xl mx-auto bg-[#12066a] rounded-[3rem] p-10 md:p-20 relative overflow-hidden shadow-2xl">
