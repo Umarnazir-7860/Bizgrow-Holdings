@@ -54,7 +54,7 @@ export default function Navbar() {
     {
       title: "SAFE CONTRACTOR",
       description: "Engagement & community building",
-      href: "/social-media-marketing",
+      href: "/our-services/safe-contractor",
       icon: <FaBullhorn />,
     },
       {
