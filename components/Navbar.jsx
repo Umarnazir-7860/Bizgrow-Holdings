@@ -5,17 +5,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
-import {
-  FaCode,
-  FaPaintBrush,
-  FaChartLine,
-  FaEnvelope,
-  FaMoon,
-  FaSun,
-  FaBullhorn,
-  FaSearch,
-} from "react-icons/fa";
-import { Code2 } from "lucide-react";
+import { 
+  ShieldCheck, Users, HardHat, Award, Leaf, 
+  HeartPulse, Construction, Dog, Lock, 
+  Globe, Fingerprint, Search, ShieldAlert, FileCheck, Building2 
+} from 'lucide-react';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -36,103 +30,98 @@ export default function Navbar() {
 
   if (!mounted) return null;
 
-  const services = [
-    {
-      title: "SIA ACS",
-      description: "Brand storytelling & visuals",
-      href: "/sia-acs",
-      icon: <FaPaintBrush />,
-    },
-  
-       {
-      title: "COP 119",
-      description: "High-converting email campaigns",
-      href: "/cop-119-labour-provision",
-      icon: <FaEnvelope />,
-    },
-
-    {
-      title: "SAFE CONTRACTOR",
-      description: "Engagement & community building",
-      href: "/our-services/safe-contractor",
-      icon: <FaBullhorn />,
-    },
-      {
-      title: "ISO 9001",
-      description: "Sales-focused strategies",
-      href: "/lead-generation-solutions",
-      icon: <FaChartLine />,
-    },
-    {
-      title: "ISO 14001",
-      description: "Custom WP development & themes",
-      href: "/wordpress-website",
-      icon: <FaCode />,
-    },
-    {
-      title: "ISO 45001",
-      description: "Omnichannel marketing solutions",
-      href: "/digital-marketing-services",
-      icon: <FaBullhorn />,
-    },
-     {
-      title: "ConstructionLine",
-      description:
-        "High-performance React & Next.js apps",
-      href: "/web-development",
-      icon: <Code2 />,
-    },
-   
-    {
-      title: "NASDU",
-      description: "Creative logos & branding",
-      href: "/graphic-design-services",
-      icon: <FaPaintBrush />,
-    },
-    {
-      title: "SMAS",
-      description: "Boost your organic visibility",
-      href: "/search-engine-optimisation",
-      icon: <FaSearch />,
-    },
-    {
-      title: "Cyber Essentials",
-      description: "Boost your organic visibility",
-      href: "/search-engine-optimisation",
-      icon: <FaSearch />,
-    },
-    {
-      title: "Cyber Essentials Plus",
-      description: "Boost your organic visibility",
-      href: "/search-engine-optimisation",
-      icon: <FaSearch />,
-    },
-     {
-      title: "CHAS SCHEME",
-      description: "Targeted ads & social growth",
-      href: "/facebook-marketing-services",
-      icon: <FaBullhorn />,
-    },
-    {
-      title: "BS 10800",
-      description: "Boost your organic visibility",
-      href: "/search-engine-optimisation",
-      icon: <FaSearch />,
-    },
-     {
-      title: "BS7858",
-      description: "Boost your organic visibility",
-      href: "/search-engine-optimisation",
-      icon: <FaSearch />,
-    },
-     {
-      title: "BS7499",
-      description: "Boost your organic visibility",
-      href: "/search-engine-optimisation",
-      icon: <FaSearch />,
-    },
-
-  ];
+ const services = [
+  {
+    title: "SIA ACS",
+    description: "Approved Contractor Scheme consultancy for security firms.",
+    href: "/sia-acs",
+    icon: <ShieldCheck />,
+  },
+  {
+    title: "COP 119",
+    description: "Code of Practice for labour provision in security sectors.",
+    href: "/cop-119-labour-provision",
+    icon: <Users />,
+  },
+  {
+    title: "SAFE CONTRACTOR",
+    description: "Health & Safety accreditation for UK contractors.",
+    href: "/our-services/safe-contractor",
+    icon: <HardHat />,
+  },
+  {
+    title: "ISO 9001",
+    description: "Quality Management Systems for operational excellence.",
+    href: "/our-services/iso-9001",
+    icon: <Award />,
+  },
+  {
+    title: "ISO 14001",
+    description: "Environmental Management Standards for sustainable growth.",
+    href: "/our-services/iso-14001",
+    icon: <Leaf />,
+  },
+  {
+    title: "ISO 45001",
+    description: "Occupational Health and Safety management systems.",
+    href: "/iso-45001",
+    icon: <HeartPulse />,
+  },
+  {
+    title: "ConstructionLine",
+    description: "Gold & Silver membership audit support for construction.",
+    href: "/construction-line",
+    icon: <Construction />,
+  },
+  {
+    title: "NASDU",
+    description: "National Association of Security Dog Users compliance.",
+    href: "/nasdu",
+    icon: <Dog />,
+  },
+  {
+    title: "SMAS",
+    description: "Worksafe accreditation for SSIP H&S compliance.",
+    href: "/smas-worksafe",
+    icon: <Building2 />,
+  },
+  {
+    title: "Cyber Essentials",
+    description: "Basic protection against common cyber threats.",
+    href: "/cyber-essentials",
+    icon: <Lock />,
+  },
+  {
+    title: "Cyber Essentials Plus",
+    description: "Verified technical audit for enhanced cyber security.",
+    href: "/cyber-essentials-plus",
+    icon: <Fingerprint />,
+  },
+  {
+    title: "CHAS SCHEME",
+    description: "Contractors Health and Safety Assessment Scheme.",
+    href: "/chas-scheme",
+    icon: <FileCheck />,
+  },
+  {
+    title: "BS 10800",
+    description: "Standard for the provision of security services.",
+    href: "/bs-10800",
+    icon: <Globe />,
+  },
+  {
+    title: "BS 7858",
+    description: "Vetting and screening of personnel in security.",
+    href: "/bs-7858",
+    icon: <Search />,
+  },
+  {
+    title: "BS 7499",
+    description: "Static guarding and mobile patrol services code.",
+    href: "/bs-7499",
+    icon: <ShieldAlert />,
+  },
+];
 
   return (
     <nav className="fixed top-4 inset-x-0 mx-2 md:mx-auto rounded-2xl max-w-7xl z-50 bg-white backdrop-blur-xl border-1 border-[#12066a]">
