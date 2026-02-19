@@ -64,25 +64,25 @@ export default function Navbar() {
   {
     title: "ISO 45001",
     description: "Occupational Health and Safety management systems.",
-    href: "/iso-45001",
+    href: "/our-services/iso-45001",
     icon: <HeartPulse />,
   },
   {
     title: "ConstructionLine",
     description: "Gold & Silver membership audit support for construction.",
-    href: "/construction-line",
+    href: "/our-services/constructionline",
     icon: <Construction />,
   },
   {
     title: "NASDU",
     description: "National Association of Security Dog Users compliance.",
-    href: "/nasdu",
+    href: "/our-services/nasdu",
     icon: <Dog />,
   },
   {
     title: "SMAS",
     description: "Worksafe accreditation for SSIP H&S compliance.",
-    href: "/smas-worksafe",
+    href: "/our-services/smas-accreditation",
     icon: <Building2 />,
   },
   {
