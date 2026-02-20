@@ -88,19 +88,19 @@ export default function Navbar() {
   {
     title: "Cyber Essentials",
     description: "Basic protection against common cyber threats.",
-    href: "/cyber-essentials",
+    href: "/our-services/cyber-essentials",
     icon: <Lock />,
   },
   {
     title: "Cyber Essentials Plus",
     description: "Verified technical audit for enhanced cyber security.",
-    href: "/cyber-essentials-plus",
+    href: "/our-services/cyber-essentials-plus",
     icon: <Fingerprint />,
   },
   {
     title: "CHAS SCHEME",
     description: "Contractors Health and Safety Assessment Scheme.",
-    href: "/chas-scheme",
+    href: "/our-services/chas-scheme",
     icon: <FileCheck />,
   },
   {
