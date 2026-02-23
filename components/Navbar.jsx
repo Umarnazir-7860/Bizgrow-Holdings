@@ -112,7 +112,7 @@ export default function Navbar() {
   {
     title: "BS 7858",
     description: "Vetting and screening of personnel in security.",
-    href: "/bs-7858",
+    href: "/our-services/bs7858-screening-vetting",
     icon: <Search />,
   },
   {
