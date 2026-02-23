@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import FadeIn from "@/components/MotionWrapper";
@@ -12,6 +10,12 @@ import {
   ArrowRight,
   PhoneCall,
 } from "lucide-react";
+
+export const metadata = {
+  title: "About Us | BizGrow Holdings Ltd, UK Experts",
+  description:
+    "BizGrow Holdings, UK experts in compliance and certification, supports security businesses to achieve trusted industry standards.",
+};
 
 export default function AboutUs() {
   return (
@@ -33,7 +37,7 @@ export default function AboutUs() {
 
         {/* 🔹 Step 2: Large Watermark Text (Middle Layer) */}
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none select-none z-10">
-          <h2 className="text-[12rem] md:text-[20rem] font-black text-white/[0.05] leading-none uppercase tracking-tighter">
+          <h2 className="text-[12rem] md:text-[20rem] font-black text-white/[0.08] leading-none uppercase tracking-tighter">
             ABOUT
           </h2>
         </div>
@@ -48,17 +52,18 @@ export default function AboutUs() {
             </FadeIn>
 
             <FadeIn direction="right" duration="0.6">
-              <h1 className="text-4xl md:text-7xl font-black text-white mt-6 leading-[1.1] tracking-tighter">
-                Driving Business <br />
-                <span className="text-[#997819]">Excellence</span> Across UK
+              <h1 className="text-4xl md:text-6xl font-black text-white mt-6 leading-[1.1] tracking-tighter">
+                UK's Leading Compliance & <br />
+                <span className="text-[#997819]">Certification </span> Experts
               </h1>
             </FadeIn>
 
             <FadeIn direction="right" duration="0.8">
               <p className="mt-8 text-blue-100/80 text-lg md:text-2xl max-w-2xl leading-relaxed font-medium">
-                BizGrow Holdings is a premier consultancy firm dedicated to
-                helping organizations achieve industry-leading certifications
-                and sustainable growth through strategic compliance.
+                BizGrow Holdings is a UK-based compliance consultancy business
+                helping organisations achieve ISO certification, security
+                accreditation, and construction compliance standards, while
+                offering governance and growth systems.
               </p>
             </FadeIn>
 
@@ -93,27 +98,26 @@ export default function AboutUs() {
 
           <FadeIn direction="right">
             <h2 className="text-3xl md:text-5xl font-black text-[#12066a] leading-tight">
-              Expert Guidance for a
-              <span className="text-[#997819]"> Regulated World.</span>
+              Compliance Expertise for a
+              <span className="text-[#997819]"> Regulated UK Market.</span>
             </h2>
             <div className="mt-8 space-y-6 text-zinc-600 leading-relaxed font-medium">
               <p>
-                Founded on the principles of integrity and expertise, BizGrow
-                Holdings has emerged as a trusted partner for security firms and
-                construction companies seeking SIA ACS and ISO Certifications.
+                BizGrow Holdings is a trusted UK compliance consultancy
+                supporting security companies and construction businesses
+                pursuing SIA ACS accreditation and ISO certifications. We don’t
+                offer generic checklists. We build structured, audit-ready
+                management systems that embed compliance into your core
+                operations, turning regulatory requirements into a strategic
+                advantage for sustainable growth.
               </p>
-              <p>
-                We don't just provide a checklist; we integrate quality
-                management systems into your core operations, ensuring that
-                compliance becomes a catalyst for your business's success rather
-                than a hurdle.
-              </p>
+
               <ul className="space-y-4 pt-4">
                 {[
-                  "Expert-led SIA ACS audit preparation",
-                  "Seamless ISO 9001, 14001, & 45001 implementation",
-                  "Strategic business scaling & consultancy",
-                  "Accredited training and compliance support",
+                  "Specialist SIA ACS audit preparation & advisory",
+                  "ISO 9001, 14001 & 45001 implementation support",
+                  "Structured compliance systems & documentation",
+                  "Ongoing governance, training & audit readiness",
                 ].map((item, i) => (
                   <li
                     key={i}
@@ -133,24 +137,25 @@ export default function AboutUs() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-black text-[#12066a]">
-              The Values That <span className="text-[#997819]">Define Us</span>
+              Our Core Values That{" "}
+              <span className="text-[#997819]">Define Us</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "Unmatched Expertise",
-                desc: "Our consultants are industry veterans with deep knowledge of UK regulatory standards.",
+                title: "Transparency and Trust",
+                desc: "We function with transparency and integrity to create strong relationships with clients based on trust and reliability.",
                 icon: <ShieldCheck />,
               },
               {
-                title: "Client-Centric",
-                desc: "Your goals are ours. We tailor our strategies to fit your unique business structure.",
+                title: "Strategic Planning",
+                desc: "We implement customised management systems for operational excellence and sustainable growth.",
                 icon: <Target />,
               },
               {
-                title: "Proven Results",
-                desc: "We boast a 100% success rate in helping clients achieve their desired certifications.",
+                title: "Client Centric",
+                desc: "We tailor our approach to meet your business needs, ensuring satisfaction and evidence-based results.",
                 icon: <Award />,
               },
             ].map((val, i) => (
@@ -186,9 +191,11 @@ export default function AboutUs() {
                 Our Mission
               </h3>
               <p className="text-2xl font-bold leading-relaxed">
-                "To simplify the path to compliance and certification for UK
-                businesses, enabling them to compete at the highest level of
-                industry standards."
+                "To deliver clear, structured, and practical compliance
+                consultancy that enables UK businesses to achieve ISO
+                certifications, industry accreditations, and long-term
+                regulatory confidence, turning complex standards into
+                sustainable growth systems."
               </p>
             </div>
             <div className="absolute -bottom-10 -right-10 text-[10rem] font-black text-white/[0.03]">
@@ -204,9 +211,10 @@ export default function AboutUs() {
                 Our Vision
               </h3>
               <p className="text-2xl font-bold leading-relaxed text-zinc-800">
-                "To be the UK’s leading catalyst for organizational growth,
-                recognized for transforming compliance into a competitive
-                advantage."
+                "To become the UK’s most trusted compliance consultancy partner,
+                recognised for transforming regulatory requirements into
+                strategic advantages that strengthen credibility, performance,
+                and competitive positioning."
               </p>
             </div>
             <div className="absolute -bottom-10 -right-10 text-[10rem] font-black text-black/[0.03]">
@@ -216,44 +224,61 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* 5 CTA Section with Background Watermark */}
-      <section className="py-20 px-6 bg-white">
+      {/* 🔹 5 CTA Section with Fixed Background Attachment */}
+      <section className="py-24 px-6 relative overflow-hidden group">
         <FadeIn direction="up">
-          <div className="max-w-7xl mx-auto bg-[#12066a] rounded-[3rem] p-10 md:p-20 relative overflow-hidden shadow-2xl">
-            {/* 🔹 Background Large Text (Watermark) */}
-            <div className="absolute top-0 right-0 text-[10rem] md:text-[15rem] font-black text-white/[0.03] select-none leading-none -translate-x-7 translate-y-6 pointer-events-none uppercase">
-              BIZGROW
+          <div className="max-w-7xl mx-auto relative rounded-[3rem] overflow-hidden shadow-2xl">
+            {/* --- FIXED BACKGROUND IMAGE --- */}
+            <div
+              className="absolute inset-0 z-0 bg-cover bg-center bg-fixed"
+              style={{
+                backgroundImage: "url('/about-cta.jpg')", // Aapki background image ka path
+              }}
+            >
+              {/* Dark Overlay to make text pop */}
+              <div className="absolute inset-0 bg-[#12066a]/65 mix-blend-multiply" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#12066a] via-transparent to-[#997819]/20" />
             </div>
 
-            {/* Background Decor Circles */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-[#997819]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-            <div className="absolute bottom-0 left-0 w-40 h-40 bg-blue-400/5 rounded-full blur-2xl" />
-
-            <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12">
-              <div className="text-center lg:text-left max-w-2xl">
-                <h2 className="text-4xl md:text-6xl font-black text-white leading-tight">
-                  Ready to Secure Your
-                  <span className="text-[#997819]"> Business Future?</span>
-                </h2>
-                <p className="text-blue-100/80 mt-6 text-lg font-medium">
-                  Our experts are ready to guide you through SIA ACS, ISO
-                  certifications, and strategic growth. Let's build something
-                  great together.
-                </p>
+            <div className="relative z-10 p-10 md:p-20">
+              {/* 🔹 Large Watermark Text */}
+              <div className="absolute top-0 right-0 text-[10rem] md:text-[15rem] font-black text-white/[0.05] select-none leading-none -translate-x-7 translate-y-6 pointer-events-none uppercase">
+                BIZGROW
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-6 w-full lg:w-auto">
-                <button className="bg-[#997819] text-white px-8 py-5 rounded-2xl font-black uppercase tracking-widest text-xs flex items-center justify-center gap-3 hover:bg-white hover:text-[#12066a] transition-all duration-500 shadow-lg group">
-                  Book Free Consultation{" "}
-                  <ArrowRight className="group-hover:translate-x-2 transition-transform" />
-                </button>
+              {/* Floating Decor Circles */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[#997819]/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
 
-                <a
-                  href="tel:+447898205035"
-                  className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-5 rounded-2xl font-black uppercase tracking-widest text-xs flex items-center justify-center gap-3 hover:bg-white/20 transition-all"
-                >
-                  <PhoneCall size={18} /> +44 7898205035
-                </a>
+              <div className="relative z-20 flex flex-col lg:flex-row items-center justify-between gap-12">
+                <div className="text-center lg:text-left max-w-2xl">
+                  <h2 className="text-4xl md:text-6xl font-black text-white leading-tight uppercase tracking-tighter">
+                    Ready to Secure Your
+                    <span className="text-[#997819] block">
+                      {" "}
+                      Business Standards?
+                    </span>
+                  </h2>
+                  <p className="text-blue-100/70 mt-8 text-lg md:text-xl font-medium leading-relaxed italic">
+                    "Our experts deliver structured compliance solutions
+                    tailored to UK regulatory requirements. Partner with BizGrow
+                    Holdings to turn compliance into lasting strength."
+                  </p>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-6 w-full lg:w-auto shrink-0">
+                  <button className="bg-[#997819] text-white px-10 py-6 rounded-2xl font-black uppercase tracking-[0.2em] text-[10px] flex items-center justify-center gap-4 hover:bg-white hover:text-[#12066a] transition-all duration-700 shadow-2xl group">
+                    Book Free Consultation
+                    <ArrowRight className="group-hover:translate-x-2 transition-transform" />
+                  </button>
+
+                  <a
+                    href="tel:+447898205035"
+                    className="bg-white/5 backdrop-blur-xl text-white border border-white/10 px-10 py-6 rounded-2xl font-black uppercase tracking-[0.2em] text-[10px] flex items-center justify-center gap-4 hover:bg-white/20 transition-all duration-500"
+                  >
+                    <PhoneCall size={18} className="text-[#997819]" /> +44
+                    7898205035
+                  </a>
+                </div>
               </div>
             </div>
           </div>
