@@ -15,7 +15,7 @@ const slides = [
   {
     image: '/home-compliance.jpg',
     alt: 'Team collaboration around a whiteboard',
-    heading: 'Compliance Made Clear. Certification Made Achievable.',
+    heading: 'Compliance Clear. Certification Achievable.',
     subheading: 'Helping UK businesses achieve ISO certification, regulatory approval, and audit-ready systems with clarity, confidence, and control.',
     buttonText: 'Explore Our Certification Services',
     buttonLink: '/certifications'
