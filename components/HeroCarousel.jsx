@@ -7,25 +7,25 @@ const slides = [
   {
     image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'Business meeting in a modern office',
-    heading: 'Strategic Growth. Measurable Results.',
-    subheading: 'Empowering your business with expert consultancy and innovative solutions.',
-    buttonText: 'Explore Our Services',
+    heading: 'Smarter Strategy. Stronger Systems. Real Results.',
+    subheading: 'BizGrow Holdings delivers compliance-driven consultancy that helps UK businesses pass audits, win contracts, and grow with certainty.',
+    buttonText: 'Start Your Growth Journey',
     buttonLink: '/services'
   },
   {
     image: '/home-compliance.jpg',
     alt: 'Team collaboration around a whiteboard',
-    heading: 'Compliance Made Simple, Success Ensured.',
-    subheading: 'Navigate complex regulations with our trusted certification and advisory.',
-    buttonText: 'View Certifications',
+    heading: 'Compliance Made Clear. Certification Made Achievable.',
+    subheading: 'Helping UK businesses achieve ISO certification, regulatory approval, and audit-ready systems with clarity, confidence, and control.',
+    buttonText: 'Explore Our Certification Services',
     buttonLink: '/certifications'
   },
   {
     image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     alt: 'Laptop showing business analytics',
-    heading: 'Innovation at the Core of Your Business.',
-    subheading: 'Driving efficiency and future-proofing your operations with cutting-edge strategies.',
-    buttonText: 'Read Our Insights',
+    heading: 'Clarity in Strategy. Confidence in Compliance.',
+    subheading: 'Supporting UK organisations with innovative yet practical solutions that improve performance and future-proof operations.',
+    buttonText: 'Explore Our Insights',
     buttonLink: '/blog'
   }
 ];
@@ -66,7 +66,7 @@ export default function HeroCarousel() {
 
           {/* Content */}
           <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-6 md:px-12">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-4 drop-shadow-lg max-w-4xl">
+            <h1 className="text-3xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-4 drop-shadow-lg max-w-5xl">
               {slide.heading}
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl font-medium mb-8 max-w-3xl leading-relaxed drop-shadow-md">

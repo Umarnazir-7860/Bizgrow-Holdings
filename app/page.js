@@ -21,22 +21,22 @@ const steps = [
   {
     num: "01",
     title: "Consultation",
-    desc: "Understanding your business needs and compliance gaps.",
+    desc: "Understanding Your Business & Compliance Position",
   },
   {
     num: "02",
     title: "Strategy",
-    desc: "Developing a custom roadmap for your certification.",
+    desc: "Building a Clear Certification & Compliance Roadmap",
   },
   {
     num: "03",
     title: "Implementation",
-    desc: "Executing standards and training your core team.",
+    desc: "System Development, Training & Operational Alignment",
   },
   {
     num: "04",
     title: "Certification",
-    desc: "Final audit support and achieving your business goals.",
+    desc: "Final Audit Support & Long-Term Compliance Success",
   },
 ];
 
@@ -44,17 +44,48 @@ const reviews = [
   {
     name: "John Smith",
     role: "Director, Shield Security",
-    text: "BizGrow Holdings helped us achieve SIA ACS with an incredible score. Their expertise in the security industry is unmatched.",
+    text: (
+      <>
+        <b>
+          "BizGrow Holdings made our ISO 9001 certification process
+          straightforward and structured.”
+        </b><br/>
+        We were unsure where to start, but their team guided us step by step
+        from gap analysis to final audit. Their documentation support and
+        internal audit preparation were exceptional. We passed our certification
+        with confidence and now operate with far better process control and
+        accountability. "
+      </>
+    ),
   },
   {
     name: "Sarah Ahmed",
     role: "Operations Manager",
-    text: "ISO certification seemed daunting until we partnered with BizGrow. They made the entire process seamless and stress-free.",
+    text: (
+      <>
+        <b>
+          "Their compliance expertise helped us secure contracts we were
+          previously losing”
+        </b><br/>
+        As a UK security company, tender requirements can be demanding. BizGrow
+        helped us strengthen our policies, workforce verification systems, and
+        audit documentation. The difference was immediate. We now approach bids
+        fully prepared and compliant."
+      </>
+    ),
   },
   {
     name: "David Warner",
     role: "CEO, TechLogix",
-    text: "Their business consultancy gave us a clear roadmap for growth. We've seen a 40% increase in efficiency since then.",
+    text: (
+      <>
+        <b>"Professional, practical, and results-driven consultancy.”</b><br/>
+        BizGrow Holdings didn’t just give us templates; they built a system that
+        actually works in our daily operations. From environmental compliance to
+        health & safety alignment, the process was structured and clear. Our
+        team feels more confident and audit-ready than ever before."
+      </>
+    ),
   },
 ];
 
@@ -63,25 +94,25 @@ const coreServices = [
     title: "SIA ACS Support",
     desc: "Achieve and maintain Approved Contractor Scheme status with expert guidance.",
     icon: <Shield className="w-8 h-8 text-[#12066a]" />,
-    bgImage: "/sia-home.jpg"
+    bgImage: "/sia-home.jpg",
   },
   {
     title: "ISO Certification",
     desc: "Streamline your business with ISO 9001, 14001, and 45001 certifications.",
     icon: <Award className="w-8 h-8 text-[#12066a]" />,
-    bgImage: "/iso-home.jpg"
+    bgImage: "/iso-home.jpg",
   },
   {
     title: "Business Consultancy",
     desc: "Strategic planning to help your company scale and improve efficiency.",
     icon: <BarChart3 className="w-8 h-8 text-[#12066a]" />,
-    bgImage: "/consultancy-home.jpg"
+    bgImage: "/consultancy-home.jpg",
   },
   {
     title: "Training & Development",
-    desc: "Empowering your workforce with professional industry-standard training.",
+    desc: "Equipping your team with professional, industry-approved training for lasting performance.",
     icon: <Users className="w-8 h-8 text-[#12066a]" />,
-    bgImage: "/business.jpg"
+    bgImage: "/business.jpg",
   },
 ];
 
@@ -162,53 +193,114 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {coreServices.map((service, idx) => (
-  <div
-    key={idx}
-    className="group relative p-8 rounded-[2rem] border border-[#997819] overflow-hidden min-h-[320px] flex flex-col justify-end transition-all duration-500 shadow-lg"
-  >
-    {/* 🔹 Step 1: Background Image */}
-    <div className="absolute inset-0 z-0">
-      <img
-        src={service.bgImage} // Array mein har service ki apni image path honi chahiye
-        alt={service.title}
-        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-      />
-      {/* 🔹 Step 2: Dark Overlay (Taake text clear nazar aaye) */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
-    </div>
+            {coreServices.map((service, idx) => (
+              <div
+                key={idx}
+                className="group relative p-8 rounded-[2rem] border border-[#997819] overflow-hidden min-h-[320px] flex flex-col justify-end transition-all duration-500 shadow-lg"
+              >
+                {/* 🔹 Step 1: Background Image */}
+                <div className="absolute inset-0 z-0">
+                  <img
+                    src={service.bgImage} // Array mein har service ki apni image path honi chahiye
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  {/* 🔹 Step 2: Dark Overlay (Taake text clear nazar aaye) */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
+                </div>
 
-    {/* 🔹 Step 3: Content (Z-index 10 taake image ke upar rahe) */}
-    <div className="relative z-10">
-      <div className="mb-6 inline-block p-4 bg-white backdrop-blur-md border border-white/20 rounded-2xl shadow-sm group-hover:scale-110 transition-transform">
-        {/* Icon color white ya gold rakhein taake dark bg par dikhe */}
-        <span className="text-[#997819] text-2xl">{service.icon}</span>
-      </div>
-      
-      <h3 className="text-xl font-black text-white mb-3 tracking-wide">
-        {service.title}
-      </h3>
-      
-      <p className="text-zinc-300 text-sm leading-relaxed group-hover:text-white transition-colors">
-        {service.desc}
-      </p>
-    </div>
-  </div>
-))}
+                {/* 🔹 Step 3: Content (Z-index 10 taake image ke upar rahe) */}
+                <div className="relative z-10">
+                  <div className="mb-6 inline-block p-4 bg-white backdrop-blur-md border border-white/20 rounded-2xl shadow-sm group-hover:scale-110 transition-transform">
+                    {/* Icon color white ya gold rakhein taake dark bg par dikhe */}
+                    <span className="text-[#997819] text-2xl">
+                      {service.icon}
+                    </span>
+                  </div>
+
+                  <h3 className="text-xl font-black text-white mb-3 tracking-wide">
+                    {service.title}
+                  </h3>
+
+                  <p className="text-zinc-300 text-sm leading-relaxed group-hover:text-white transition-colors">
+                    {service.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      {/* 2. THE VISION - Image + Text Content */}
+      <section className="py-24 px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <FadeIn direction="left" className="relative">
+            <div className="aspect-square relative rounded-[3rem] overflow-hidden shadow-2xl">
+              <Image
+                src="/our-approach-home.jpg" // Placeholder for your image
+                alt="BizGrow Consultancy Team"
+                fill
+                className="object-cover"
+              />
+            </div>
+            {/* Experience Badge */}
+            <div className="absolute -bottom-10 right-10 bg-[#997819] p-8 rounded-[2rem] text-white hidden md:block shadow-xl">
+              <div className="text-4xl font-black">10+</div>
+              <div className="text-xs uppercase font-bold tracking-widest">
+                Years Experience
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn direction="right">
+            <h2 className="text-3xl md:text-5xl font-black text-[#12066a] leading-tight">
+              Our
+              <span className="text-[#997819]"> Approach</span>
+            </h2>
+            <div className="mt-8 space-y-6 text-zinc-600 leading-relaxed font-medium">
+              <p>
+                We follow a structured approach with clients, i.e. We start by
+                meeting with your management team to fully understand your
+                goals, challenges, and compliance needs. Then, we work
+                side-by-side to design and implement the most effective,
+                tailored solution through every phase:
+              </p>
+             
+              <ul className="space-y-4 pt-4">
+                {[
+                  "Strategic & Project Planning",
+                  "Stakeholder Engagement",
+                  "Project Kick-off",
+                  "Staff Training on Latest Industry Standards",
+                  "Post-Implementation Support",
+                  "Internal Audits & Performance Checks",
+                  "Implementation of Quality Management Systems (QMS)",
+                ].map((item, i) => (
+                  <li
+                    key={i}
+                    className="flex items-center gap-3 text-[#12066a] font-bold"
+                  >
+                    <CheckCircle2 className="text-[#997819]" size={20} /> {item}
+                  </li>
+                ))}
+              </ul>
+              <p className="font-bold text-black">Your growth is our goal, and compliance is just the beginning. </p>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       {/* How we work */}
       <section className="py-24 min-h-screen lg:h-auto bg-[#12066a] relative overflow-hidden">
         {/* Decorative Background Text */}
-        <Image  
-        src="/experts-home.jpg"
-        fill
-        className="object-cover hidden md:block"
-        
+        <Image
+          src="/experts-home.jpg"
+          fill
+          className="object-cover hidden md:block"
         />
         {/* Black Overlay Effect */}
-          <div className="hidden md:block absolute inset-0 bg-black/70 backdrop-blur-[1px]" />
+        <div className="hidden md:block absolute inset-0 bg-black/70 backdrop-blur-[1px]" />
         <div className="absolute top-10 right-0 text-[4rem] md:text-[15rem] font-black text-white/10 select-none leading-none -translate-y-1/4">
           BIZGROW
         </div>
@@ -219,7 +311,8 @@ export default function HomePage() {
               Our Roadmap
             </span>
             <h2 className="text-4xl md:text-5xl font-black text-white mt-4">
-              The Path to <span className="text-[#997819]">Excellence</span>
+              The Path to{" "}
+              <span className="text-[#997819]">Operational Excellence</span>
             </h2>
           </div>
 
@@ -284,7 +377,7 @@ export default function HomePage() {
                       className="absolute -top-2 -right-2 text-zinc-200 group-hover:text-[#997819]/20 transition-colors"
                       size={40}
                     />
-                    <p className="text-zinc-600 font-medium leading-relaxed mb-10 italic">
+                    <p className="text-black font-medium leading-relaxed mb-10 italic">
                       "{rev.text}"
                     </p>
                   </div>
@@ -324,9 +417,10 @@ export default function HomePage() {
                   <span className="text-[#997819]"> Business Future?</span>
                 </h2>
                 <p className="text-blue-100/80 mt-6 text-lg font-medium">
-                  Our experts are ready to guide you through SIA ACS, ISO
-                  certifications, and strategic growth. Let's build something
-                  great together.
+                  Our compliance experts support UK organisations with SIA ACS
+                  approval, ISO certifications, and structured growth strategies
+                  designed to deliver measurable results. Build audit-ready
+                  systems. Win contracts. Operate with confidence.
                 </p>
               </div>
 

@@ -106,7 +106,7 @@ export default function Navbar() {
   {
     title: "BS 10800",
     description: "Standard for the provision of security services.",
-    href: "/bs-10800",
+    href: "/our-services/bs-10800",
     icon: <Globe />,
   },
   {
