@@ -26,7 +26,7 @@ export default function AboutUs() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/about-hero.webp" // About page ki specific corporate image
-            alt="BizGrow Holdings Corporate"
+            alt="About BizGrow Holdings ltd Uk"
             fill
             className="object-cover"
             priority
@@ -82,7 +82,7 @@ export default function AboutUs() {
             <div className="aspect-square relative rounded-[3rem] overflow-hidden shadow-2xl">
               <Image
                 src="/expert-about.jpg" // Placeholder for your image
-                alt="BizGrow Consultancy Team"
+                alt="UK compliance consultancy services | BizGrow Holdings ltd"
                 fill
                 className="object-cover"
               />

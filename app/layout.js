@@ -16,8 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: {
     default: "BizGrow Holdings | UK's Leading Compliance & ISO Consultancy",
-    template: "%s | BizGrow Holdings" // Isse About page ka title auto "About Us | BizGrow Holdings" ban jayega
-  },
+       },
   description: "Premier consultancy for SIA ACS, ISO Certifications (9001, 14001, 45001), and Cyber Essentials in the UK. Empowering business growth through compliance.",
   
   // 🔹 Icons & Favicon
