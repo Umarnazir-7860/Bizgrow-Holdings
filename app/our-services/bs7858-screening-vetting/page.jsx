@@ -127,7 +127,7 @@ const BS7858Page = () => {
                 <li>• Basic Criminal Record Disclosure</li>
               </ul>
             </div>
-            <div className="p-12 bg-[#997819] rounded-[3rem] text-[#12066a] shadow-2xl">
+            <div className="p-12 bg-[#997819] rounded-[3rem] text-white shadow-2xl">
               <h4 className="font-black text-2xl mb-6">BS 7858 Gold Standard</h4>
               <ul className="space-y-4 font-black uppercase text-xs tracking-widest">
                 <li>• Full 5-Year Employment Audit</li>
@@ -152,7 +152,7 @@ const BS7858Page = () => {
               { n: "04", t: "Final Report", d: "A comprehensive vetting file ready for your SIA/Audit inspection." }
             ].map((step, i) => (
               <div key={i} className="bg-white p-10 rounded-[3rem] flex flex-col items-center text-center shadow-sm">
-                <span className="text-5xl font-black text-[#997819]/20 mb-6">{step.n}</span>
+                <span className="text-5xl font-black text-[#997819]/50 mb-6">{step.n}</span>
                 <h5 className="font-black text-[#12066a] uppercase mb-3 tracking-tighter text-lg">{step.t}</h5>
                 <p className="text-zinc-500 text-xs font-medium leading-relaxed">{step.d}</p>
               </div>

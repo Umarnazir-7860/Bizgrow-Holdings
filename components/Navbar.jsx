@@ -118,7 +118,7 @@ export default function Navbar() {
   {
     title: "BS 7499",
     description: "Static guarding and mobile patrol services code.",
-    href: "/bs-7499",
+    href: "/our-services/bs-7499",
     icon: <ShieldAlert />,
   },
 ];

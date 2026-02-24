@@ -21,84 +21,98 @@ import {
 } from "lucide-react";
 
 const ServicesPage = () => {
-const services = [
-  {
-    title: "SIA ACS Support",
-    desc: "We provide end-to-end guidance for the Security Industry Authority’s Approved Contractor Scheme. From gap analysis to final audit, we ensure your management systems meet and exceed the required scoring criteria for UK security firms.",
-    icon: <ShieldCheck size={30} />,
-  },
-  {
-    title: "ISO 9001:2015",
-    desc: "Enhance your operational efficiency with the world’s most recognized Quality Management System. We help you streamline processes, reduce errors, and ensure consistent service delivery that keeps your clients coming back.",
-    icon: <Award size={30} />,
-  },
-  {
-    title: "ISO 14001:2015",
-    desc: "Demonstrate your commitment to environmental sustainability. Our consultants help you implement systems to manage environmental impact, reduce waste, and comply with evolving green regulations in the UK market.",
-    icon: <Globe size={30} />,
-  },
-  {
-    title: "ISO 45001:2018",
-    desc: "Prioritize your team's safety with the global standard for Occupational Health and Safety. We help you identify risks and implement controls to prevent workplace injuries, ensuring a safe and productive environment.",
-    icon: <HardHat size={30} />,
-  },
-  {
-    title: "Cyber Essentials",
-    desc: "Protect your business from 80% of common cyber-attacks. We guide you through the government-backed certification process, making your organization eligible for sensitive UK central government contracts.",
-    icon: <Lock size={30} />,
-  },
-  {
-    title: "Cyber Essentials Plus",
-    desc: "Take your digital security to the next level with a hands-on technical verification. This advanced certification proves to your clients that your cyber defenses are robust and independently tested.",
-    icon: <ShieldCheck size={30} />, // Missing Service 1
-  },
-  {
-    title: "ConstructionLine",
-    desc: "Accelerate your tender process. We assist you in achieving Silver, Gold, or Platinum membership, ensuring your business is pre-qualified for major construction projects across the United Kingdom.",
-    icon: <Layers size={30} />,
-  },
-  {
-    title: "CHAS Accreditation",
-    desc: "Showcase your health and safety competence. We manage your CHAS application and documentation, helping you gain the UK’s leading accreditation for supply chain risk management.",
-    icon: <ClipboardCheck size={30} />,
-  },
-  {
-    title: "SafeContractor",
-    desc: "Reduce risk and build trust. We streamline your SafeContractor audit, ensuring your health, safety, and ethical policies are fully compliant with modern industry standards.",
-    icon: <CheckCircle2 size={30} />,
-  },
-  {
-    title: "BS 7858 Vetting",
-    desc: "Ensure your staff are trustworthy. We help you implement the British Standard for security screening, covering background checks and financial history for personnel working in secure environments.",
-    icon: <Search size={30} />,
-  },
-  {
-    title: "BS 10800",
-    desc: "The gold standard for the operational management of security companies. We help you implement this framework to provide a solid foundation for all security-specific British Standards.",
-    icon: <FileText size={30} />, // Missing Service 2
-  },
-  {
-    title: "BS 7499",
-    desc: "Expert guidance on the provision of static guarding and mobile patrol services. We ensure your operations comply with the latest code of practice for manned security excellence.",
-    icon: <ShieldAlert size={30} />, // Missing Service 3
-  },
-  {
-    title: "NASDU Compliance",
-    desc: "Expert support for K9 security providers. We ensure your dog handling operations meet the National Association of Security Dog Users standards for safety and effectiveness.",
-    icon: <ShieldAlert size={30} />,
-  },
-  {
-    title: "SMAS Worksafe",
-    desc: "Get your SSIP certificate without the stress. Our team prepares all necessary H&S documentation to prove your competence to major UK housebuilders and developers.",
-    icon: <Zap size={30} />,
-  },
-  {
-    title: "COP 119",
-    desc: "Specialized code of practice for the provision of manual and electronic security. We ensure your firm meets the rigorous standards required for high-level security contracts.",
-    icon: <BarChart3 size={30} />,
-  },
-];
-
+  const services = [
+    {
+      title: "SIA ACS Support",
+      desc: "SIA ACS accreditation confirms your security company meets high operational and management standards in the UK. It evaluates performance across customer service, workforce management, and compliance systems. ACS approval significantly strengthens credibility when bidding for security contracts and government tenders UK.",
+      icon: <ShieldCheck size={30} />,
+      bgImage: "/sia-home.jpg", // Security/Audit Vibe
+    },
+    {
+      title: "ISO 9001:2015",
+      desc: "ISO 9001 certification establishes a robust Quality Management System (QMS) aligned with UK standards. It improves operational efficiency, customer satisfaction, and business performance management. ISO 9001 is widely recognised across industries and strengthens eligibility for UK tenders and supplier approval.",
+      icon: <Award size={30} />,
+      bgImage: "/iso-service.jpg", // Office/Quality Vibe
+    },
+    {
+      title: "ISO 14001:2015",
+      desc: "ISO 14001 certification establishes an effective Environmental Management System (EMS) in line with UK regulations. It helps organisations manage environmental impact, sustainability goals, and legal compliance. ISO 14001 improves reputation and supports eligibility for environmentally responsible UK contracts.",
+      icon: <Globe size={30} />,
+      bgImage: "/iso-14001-service.jpg", // Green/Sustainability
+    },
+    {
+      title: "ISO 45001:2018",
+      desc: "ISO 45001 provides an internationally recognised framework for occupational health and safety management in the UK. It reduces workplace incidents through structured risk assessment and safety compliance systems. Certification enhances trust with clients, who prioritise HSE compliance and contractor safety standards.",
+      icon: <HardHat size={30} />,
+      bgImage: "/iso-45001-service.jpg", // Safety/Construction
+    },
+    {
+      title: "Cyber Essentials",
+      desc: "Cyber Essentials certification helps UK businesses protect against common cyber threats and demonstrate strong UK cyber security compliance. It supports GDPR compliance, data protection, and IT security standards, reducing the risk of cyber attacks and data breaches. Many organisations require Cyber Essentials to bid for UK government contracts and public sector tenders.",
+      icon: <Lock size={30} />,
+      bgImage: "/cyber-bg.jpg", // Tech/Cyber
+    },
+    {
+      title: "Cyber Essentials Plus",
+      desc: "Cyber Essentials Plus provides independent technical verification of your cybersecurity controls and network security systems. This advanced certification strengthens your data protection, ransomware defence, and cyber risk management. It builds trust with clients, especially for businesses handling sensitive information or supplying the UK public sector.",
+      icon: <ShieldCheck size={30} />,
+      bgImage: "/cyber-plus-cta.jpg", // Advanced Tech
+    },
+    {
+      title: "ConstructionLine",
+      desc: "Constructionline registration validates your compliance for construction and contractor procurement UK. It simplifies pre-qualification processes by verifying health and safety, financial stability, and regulatory compliance. Constructionline membership increases visibility for UK construction tenders and public sector opportunities.",
+      icon: <Layers size={30} />,
+      bgImage: "/constructionline-service.jpg", // Building/Construction
+    },
+    {
+      title: "CHAS Accreditation",
+      desc: "CHAS accreditation demonstrates full health and safety compliance in the UK for contractors and service providers. It verifies your risk assessments, HSE procedures, and contractor competence. Many organisations require CHAS for construction tenders in the UK and government contracts.",
+      icon: <ClipboardCheck size={30} />,
+      bgImage: "/smas-h.jpg", // Health/Safety
+    },
+    {
+      title: "SafeContractor",
+      desc: "SafeContractor approval confirms your organisation meets strict health and safety standards in the UK construction industry. It supports compliance with risk management, workplace safety, and contractor pre-qualification requirements. SafeContractor accreditation improves access to public sector contracts and major UK projects.",
+      icon: <CheckCircle2 size={30} />,
+      bgImage: "/h.jpg", // Logistics/Compliance
+    },
+    {
+      title: "BS 7858 Vetting",
+      desc: "BS7858 screening ensures thorough background checks and employee vetting for UK security companies. It supports SIA compliance, pre-employment screening, and workforce integrity standards. BS7858 vetting is essential for businesses providing security services in the UK and contract guarding.",
+      icon: <Search size={30} />,
+      bgImage: "/secure.jpg", // Interview/Vetting
+    },
+    {
+      title: "BS 10800",
+      desc: "BS 10800 provides a competence framework for security service providers and security company management in the UK. It supports professional development, structured governance, and quality management systems alignment. Certification enhances trust with clients seeking reliable, compliant private security companies in the UK.",
+      icon: <FileText size={30} />,
+      bgImage: "/guarding-cta.jpg", // Management/Contract
+    },
+    {
+      title: "BS 7499",
+      desc: "BS 7499 is the British Standard for static guarding and mobile patrol security services in the UK. It strengthens your operational structure, staff vetting, and SIA compliance requirements. Achieving BS 7499 improves credibility when bidding for security contracts UK and commercial guarding services.",
+      icon: <ShieldAlert size={30} />,
+      bgImage: "/mobile-patrolling-service.jpg", // Guarding/Patrol
+    },
+    {
+      title: "NASDU Compliance",
+      desc: "NASDU compliance ensures your security dog handling services meet recognised UK security industry standards. It supports operational excellence in K9 security services, SIA compliance, and risk management procedures. NASDU approval enhances credibility for security companies working in high-risk environments and contract security in the UK.",
+      icon: <ShieldAlert size={30} />,
+      bgImage: "/nasdu-cta.jpg", // Dog/Security
+    },
+    {
+      title: "SMAS Worksafe",
+      desc: "SMAS Worksafe accreditation demonstrates full health and safety compliance UK for contractors and construction businesses. It verifies your risk assessment procedures, HSE compliance, and safe working practices. Many main contractors and local authorities require SMAS for tender approval and contractor pre-qualification.",
+      icon: <Zap size={30} />,
+      bgImage: "/smas-service.jpg", // Site/Development
+    },
+    {
+      title: "COP 119",
+      desc: "COP119 sets recognised standards for front-line security officers and screening operations in the UK. It strengthens operational procedures, SIA compliance, and service delivery standards. Compliance with COP119 enhances credibility for businesses bidding for security contracts in the UK.",
+      icon: <BarChart3 size={30} />,
+      bgImage: "/cop-119-service.jpg", // Data/Charts/Security
+    },
+  ];
   return (
     <main className="bg-white text-zinc-900">
       {/* 🔹 1. HERO SECTION */}
@@ -125,16 +139,19 @@ const services = [
         <div className="max-w-7xl mx-auto px-6 relative z-20 w-full">
           <FadeIn direction="right">
             <span className="text-[#997819] font-black uppercase tracking-[0.4em] text-xs md:text-sm">
-              Comprehensive Solutions
+              Advancing Compliance
             </span>
             <h1 className="text-4xl md:text-7xl font-black text-white mt-6 leading-[1.1]">
-              Elevating UK Business <br />{" "}
-              <span className="text-[#997819]">Compliance</span> Standards
+              Advancing Compliance Standards for
+              <span className="text-[#997819]">
+                {" "}
+                UK <br /> Organisations
+              </span>
             </h1>
             <p className="mt-6 text-white/80 text-lg md:text-xl max-w-2xl font-medium leading-relaxed">
-              From ISO certifications to security-specific accreditations, we
-              provide the technical expertise and strategic support needed to
-              scale your business in a regulated world.
+              Our team provides expert-led ISO certification support and
+              security-focused accreditations, helping your business meet
+              regulatory requirements and scale with confidence.
             </p>
           </FadeIn>
         </div>
@@ -144,52 +161,98 @@ const services = [
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <FadeIn direction="up">
-            <h2 className="text-3xl md:text-5xl font-black text-[#12066a] mb-8 tracking-tighter">
-              Expertise That Drives Growth
+            <h2 className="text-3xl md:text-6xl font-black text-[#12066a] mb-8 tracking-tighter">
+              Professional and dedicated consulting services
             </h2>
-            <p className="text-zinc-600 text-lg md:text-xl leading-relaxed font-medium">
-              BizGrow Holdings specializes in transforming complex regulatory
-              requirements into simplified, manageable processes. We don't just
-              help you pass audits; we build robust management systems that
-              improve your bottom line and enhance your professional reputation
-              across the UK.
+            <p className="text-zinc-600 text-lg  leading-relaxed font-medium">
+              At BizGrow Holdings, we support private security and associated
+              businesses in navigating compliance, accreditation, and
+              certification frameworks that strengthen credibility, improve
+              efficiency, and open doors to new opportunities. Whether it’s
+              attaining international ISO standards or gaining nationally
+              recognised industry accreditations such as ACS, CHAS, and
+              SafeContractor, we provide tailored experience and expertise to
+              meet your organisation’s unique requirements. Our Purpose is to
+              ensure you remain fully compliant with regulations, win contracts
+              with confidence, and achieve sustainable growth in a highly
+              competitive marketplace.
             </p>
           </FadeIn>
         </div>
       </section>
 
-      {/* 🔹 3. SERVICES GRID */}
+      {/* 🔹 3. SERVICES GRID (Compact Luxury with Continuous Icon Spin) */}
       <section className="pb-32 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, i) => (
               <FadeIn key={i} direction="up" delay={i * 0.1}>
-                <div className="p-10 bg-zinc-50 border border-[#12066a] rounded-[3rem] hover:bg-white hover:shadow-2xl hover:border-[#997819] transition-all duration-500 group h-full flex flex-col">
-                  {/* 🔹 Modern Icon Container (No more rotating background) */}
-                  <div className="mb-8 relative">
-                    {/* Soft background shape that scales on hover */}
-                    <div className="w-16 h-16 bg-[#12066a]/5 rounded-2xl absolute inset-0 group-hover:scale-125 group-hover:bg-[#997819]/10 transition-all duration-500 ease-out" />
+                <div className="group relative h-[400px] rounded-[3rem] overflow-hidden bg-[#12066a] transition-all duration-700 hover:-translate-y-3 hover:shadow-[0_40px_80px_-20px_rgba(18,6,106,0.4)]">
+                  {/* 1. Background Image with Cinematic Motion */}
+                  <div
+                    className="absolute inset-0 z-0 bg-cover bg-center transition-all duration-[1.5s] ease-in-out group-hover:scale-125 group-hover:rotate-2 opacity-50 group-hover:opacity-30"
+                    style={{
+                      backgroundImage: `url(${
+                        service.bgImage || "/service-bg.jpg"
+                      })`,
+                    }}
+                  />
 
-                    {/* Icon that shifts slightly up */}
-                    <div className="relative z-10 text-[#12066a] group-hover:text-[#997819] group-hover:-translate-y-1 transition-all duration-500 flex items-center justify-center w-16 h-16">
-                      {service.icon}
+                  {/* 2. Moving Watermark Text (Premium Detail) */}
+                  <div className="absolute top-8 left-8 pointer-events-none z-10 overflow-hidden">
+                    <h4 className="text-[4rem] font-black text-white/[0.08] uppercase leading-none tracking-tighter transition-transform duration-1000 group-hover:-translate-y-2 group-hover:text-[#997819]/50">
+                      {service.title.split(" ")[0]}
+                    </h4>
+                  </div>
+
+                  {/* 3. Gradient Overlay */}
+                  <div className="absolute inset-0 z-20 bg-gradient-to-t from-[#12066a] via-[#12066a]/40 to-transparent" />
+
+                  {/* 4. Content Layer */}
+                  <div className="relative z-30 h-full p-10 flex flex-col justify-end">
+                    {/* --- CONTINUOUS SPINNING ICON RING --- */}
+                    <div className="absolute top-10 right-10">
+                      <div className="relative flex items-center justify-center w-16 h-16 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl transition-all duration-500 group-hover:border-[#997819] group-hover:bg-[#997819]/20 shadow-2xl">
+                        {/* The Continuous Loading Ring (Visible 24/7) */}
+                        <div className="absolute inset-0 rounded-full border-t-2 border-r-2 border-[#997819] animate-[spin_4s_linear_infinite] opacity-50 group-hover:opacity-100 group-hover:animate-[spin_1.5s_linear_infinite] transition-all duration-500" />
+
+                        {/* Icon Container */}
+                        <div className="relative z-10 text-[#997819] group-hover:scale-110 transition-transform duration-500">
+                          {React.cloneElement(service.icon, { size: 24 })}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Text Content Area */}
+                    <div className="transition-transform duration-500 group-hover:-translate-y-4">
+                      <span className="text-[#997819] font-black text-[9px] tracking-[0.5em] uppercase mb-3 block opacity-0 group-hover:opacity-100 transition-all duration-700 translate-y-4 group-hover:translate-y-0">
+                        Advanced Audit
+                      </span>
+                      <h3 className="text-2xl md:text-3xl font-black text-white mb-3 tracking-tighter uppercase leading-[0.9]">
+                        {service.title}
+                      </h3>
+                      <p className="text-blue-100/50 font-medium leading-relaxed text-sm line-clamp-2 group-hover:text-white/80 transition-all duration-500">
+                        {service.desc}
+                      </p>
+                    </div>
+
+                    {/* Luxury Footer (Glassmorphism revealed on hover) */}
+                    <div className="mt-6 pt-6 border-t border-white/5 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-all duration-700 translate-y-8 group-hover:translate-y-0">
+                      <button className="flex items-center gap-3 text-white font-black text-[9px] uppercase tracking-[0.3em] group/btn">
+                        <span className="group-hover/btn:text-[#997819] transition-colors">
+                          Enquire Now
+                        </span>
+                        <div className="w-8 h-[1px] bg-[#997819] group-hover/btn:w-12 transition-all duration-500" />
+                      </button>
+
+                      <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#997819] text-white shadow-[0_0_20px_rgba(153,120,25,0.4)]">
+                        <ArrowRight size={14} />
+                      </div>
                     </div>
                   </div>
 
-                  <h3 className="text-2xl font-black text-[#12066a] mb-4 tracking-tighter">
-                    {service.title}
-                  </h3>
-
-                  <p className="text-zinc-500 font-medium leading-relaxed mb-8 flex-grow">
-                    {service.desc}
-                  </p>
-
-                  {/* Premium Button Style */}
-                  <div className="pt-6 border-t border-zinc-200/60">
-                    <button className="flex items-center gap-2 text-[#997819] font-bold text-xs uppercase tracking-[0.2em] group-hover:gap-4 transition-all duration-300">
-                      Enquire Now <ArrowRight size={16} />
-                    </button>
-                  </div>
+                  {/* Subtle Interactive Glow at bottom */}
+                  <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-[#997819]/10 rounded-full blur-[100px] group-hover:bottom-0 group-hover:left-0 transition-all duration-1000 opacity-0 group-hover:opacity-100" />
                 </div>
               </FadeIn>
             ))}
@@ -207,29 +270,30 @@ const services = [
                 <span className="text-[#997819]">Methodology</span>
               </h2>
               <p className="text-black text-lg mb-12 font-medium">
-                We follow a rigorous four-step process to ensure every client
-                achieves a 100% success rate in their certification journey.
+                We apply a disciplined four-stage framework to ensure every
+                client progresses confidently and successfully through their
+                certification and compliance journey.
               </p>
               <div className="space-y-6">
                 {[
                   {
                     step: "01",
-                    t: "Gap Analysis",
+                    t: "Compliance Gap Review",
                     d: "We identify exactly what your business is missing to meet standards.",
                   },
                   {
                     step: "02",
-                    t: "System Design",
+                    t: "Framework & System Development",
                     d: "We create custom policies that fit your actual workflow.",
                   },
                   {
                     step: "03",
-                    t: "Implementation",
+                    t: "Practical Implementation",
                     d: "We help your team adopt new standards with zero downtime.",
                   },
                   {
                     step: "04",
-                    t: "Internal Audit",
+                    t: "Internal Audit & Readiness Check",
                     d: "We run a 'mock audit' to guarantee success before the final inspection.",
                   },
                 ].map((item, idx) => (
@@ -242,7 +306,7 @@ const services = [
                     </span>
                     <div>
                       <h4 className="font-bold text-xl mb-1">{item.t}</h4>
-                      <p className="text-white/50 text-sm">{item.d}</p>
+                      <p className="text-black text-sm">{item.d}</p>
                     </div>
                   </div>
                 ))}
@@ -267,25 +331,29 @@ const services = [
         </div>
       </section>
 
-        {/* 🔹 5. IMPACT STATEMENT (Call to Action) */}
+      {/* 🔹 5. IMPACT STATEMENT (Call to Action) */}
       <section className="py-40 text-center relative bg-white/30 overflow-hidden">
         {/* Large Background Watermark Text */}
         <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none select-none">
-          <h2 className="text-[10rem] md:text-[16rem] font-black uppercase">BizGrow</h2>
+          <h2 className="text-[10rem] md:text-[16rem] font-black uppercase">
+            BizGrow
+          </h2>
         </div>
 
         <FadeIn direction="up">
           <div className="max-w-4xl mx-auto px-6 relative z-10">
-              <h2 className="text-3xl md:text-6xl font-black text-[#12066a] mb-8  tracking-tighter">
-                " Turning Vision Into <span className="text-[#997819]">Execution.</span> "
-              </h2>
-              <p className="text-zinc-500 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
-                  Join BizGrow Holdings in redefining the future of your organization. 
-                  Our mission is your growth, and our vision is your success.
-              </p>
-              <button className="px-12 py-5 bg-[#12066a] text-white font-black uppercase tracking-widest hover:bg-[#997819] hover:scale-105 duration-500 transition-all rounded-2xl flex items-center gap-3 mx-auto shadow-xl">
-                  Connect With Our Team <ArrowRight size={20} />
-              </button>
+            <h2 className="text-3xl md:text-6xl font-black text-[#12066a] mb-8  tracking-tighter">
+              " Turning Vision Into{" "}
+              <span className="text-[#997819]">Execution.</span> "
+            </h2>
+            <p className="text-zinc-500 text-lg md:text-xl mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
+              Join BizGrow Holdings in redefining the future of your
+              organisation. Our mission is your growth, and our vision is your
+              success.
+            </p>
+            <button className="px-12 py-5 bg-[#12066a] text-white font-black uppercase tracking-widest hover:bg-[#997819] hover:scale-105 duration-500 transition-all rounded-2xl flex items-center gap-3 mx-auto shadow-xl">
+              Connect With Our Team <ArrowRight size={20} />
+            </button>
           </div>
         </FadeIn>
       </section>
