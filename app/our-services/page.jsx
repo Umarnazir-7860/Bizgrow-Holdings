@@ -182,7 +182,7 @@ const ServicesPage = () => {
       </section>
 
       {/* 🔹 3. SERVICES GRID (Compact Luxury with Continuous Icon Spin) */}
-      <section className="pb-32 bg-white">
+      <section className="pb-22 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, i) => (
@@ -240,7 +240,7 @@ const ServicesPage = () => {
                     <div className="mt-6 pt-6 border-t border-white/5 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-all duration-700 translate-y-8 group-hover:translate-y-0">
                       <button className="flex items-center gap-3 text-white font-black text-[9px] uppercase tracking-[0.3em] group/btn">
                         <span className="group-hover/btn:text-[#997819] transition-colors">
-                          Enquire Now
+                          Read More
                         </span>
                         <div className="w-8 h-[1px] bg-[#997819] group-hover/btn:w-12 transition-all duration-500" />
                       </button>
@@ -261,7 +261,7 @@ const ServicesPage = () => {
       </section>
 
       {/* 🔹 4. METHODOLOGY (Bonus Section for Length & Authority) */}
-      <section className="py-32 bg-white/40 text-black">
+      <section className="py-22 bg-white/40 text-black">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <FadeIn direction="left">
@@ -332,7 +332,7 @@ const ServicesPage = () => {
       </section>
 
       {/* 🔹 5. IMPACT STATEMENT (Call to Action) */}
-      <section className="py-40 text-center relative bg-white/30 overflow-hidden">
+      <section className="py-22 text-center relative bg-white/30 overflow-hidden">
         {/* Large Background Watermark Text */}
         <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none select-none">
           <h2 className="text-[10rem] md:text-[16rem] font-black uppercase">
