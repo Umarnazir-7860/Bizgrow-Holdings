@@ -13,7 +13,7 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "ISO 9001 Certification UK | BizGrow Holdings Quality Solutions",
+  title: "ISO 9001 Certification UK | BizGrow Holdings",
   description:
     "Achieve ISO 9001 certification with BizGrow Holdings. Expert guidance, audits & compliance support for UK businesses.",
 };
@@ -117,9 +117,9 @@ const ISO9001Page = () => {
                   } transition-transform hover:-translate-y-2 duration-500`}
                 >
                   <div className="mb-6 text-[#997819]">{item.icon}</div>
-                  <h4 className="text-2xl font-black mb-4 tracking-tight">
+                  <h3 className="text-2xl font-black mb-4 tracking-tight">
                     {item.t}
-                  </h4>
+                  </h3>
                   <p
                     className={`${
                       i % 2 === 0 ? "text-zinc-500" : "text-blue-100/60"
@@ -156,9 +156,9 @@ const ISO9001Page = () => {
                     <Briefcase size={32} />
                   </div>
                   <div>
-                    <h4 className="text-xl font-black text-[#12066a] mb-2 uppercase tracking-tight">
+                    <h3 className="text-xl font-black text-[#12066a] mb-2 uppercase tracking-tight">
                       ACCESS TO HIGH-VALUE CONTRACTS
-                    </h4>
+                    </h3>
                     <p className="text-zinc-500 font-medium leading-relaxed">
                       Leading UK construction and security clients prioritise
                       suppliers with certified ISO 9001 systems. It is often a
@@ -173,9 +173,9 @@ const ISO9001Page = () => {
                     <Users size={32} />
                   </div>
                   <div>
-                    <h4 className="text-xl font-black text-[#12066a] mb-2 uppercase tracking-tight">
+                    <h3 className="text-xl font-black text-[#12066a] mb-2 uppercase tracking-tight">
                       IMPROVED CLIENT CONFIDENCE
-                    </h4>
+                    </h3>
                     <p className="text-zinc-500 font-medium leading-relaxed">
                       A certified Quality Management System demonstrates
                       reliability, accountability, and commitment to continuous
@@ -192,9 +192,9 @@ const ISO9001Page = () => {
                 <div className="bg-[#12066a] rounded-[3rem] p-12 text-center relative overflow-hidden">
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#997819] to-transparent opacity-50" />
 
-                  <h3 className="text-white font-black text-2xl mb-10 tracking-tight ">
+                  <h2 className="text-white font-black text-2xl mb-10 tracking-tight ">
                     Our ISO 9001 Support Promise
-                  </h3>
+                  </h2>
                   <div className="space-y-6">
                     {[
                       "Accelerated certification guidance with minimal disruption",
@@ -264,9 +264,9 @@ const ISO9001Page = () => {
                 <span className="text-5xl font-black text-[#997819]/60 group-hover:text-[#997819] transition-colors">
                   {step.n}
                 </span>
-                <h4 className="text-xl font-black text-[#12066a] group-hover:text-white mt-6 mb-3">
+                <h3 className="text-xl font-black text-[#12066a] group-hover:text-white mt-6 mb-3">
                   {step.t}
-                </h4>
+                </h3>
                 <p className="text-zinc-500 group-hover:text-blue-100/60 text-sm font-medium leading-relaxed">
                   {step.d}
                 </p>
@@ -282,10 +282,10 @@ const ISO9001Page = () => {
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="lg:w-1/2">
               <FadeIn direction="right">
-                <h3 className="text-5xl font-black text-[#12066a] tracking-tight mb-6 uppercase">
+                <h2 className="text-5xl font-black text-[#12066a] tracking-tight mb-6 uppercase">
                   Essential QMS <br />{" "}
                   <span className="text-[#997819]">Documentation</span>
-                </h3>
+                </h2>
                 <p className="text-zinc-500 font-medium mb-10 max-w-md">
                   We design and implement a structured ISO 9001 Quality
                   Management System tailored to your UK business operations,
@@ -378,10 +378,10 @@ const ISO9001Page = () => {
             </div>
 
             <div className="order-1 md:order-2">
-              <h3 className="text-4xl md:text-6xl font-black text-white tracking-tighter mb-8 leading-[0.9]">
+              <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter mb-8 leading-[0.9]">
                 Data Driven <br />{" "}
                 <span className="text-[#997819]">Compliance.</span>
-              </h3>
+              </h2>
               <div className="space-y-6">
                 {[
                   "Annex SL High-Level Structure",
