@@ -136,7 +136,7 @@ const SIAACSPage = () => {
         </div>
       </section>
 
-      {/* 🔹 3. THE 7 CORE CRITERIA (Technical Depth) */}
+      {/* 🔹 3. THE 8 CORE CRITERIA (Technical Depth) */}
       <section className="py-12 bg-zinc-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
@@ -145,7 +145,7 @@ const SIAACSPage = () => {
                 The Audit Framework
               </span>
               <h2 className="text-4xl md:text-6xl font-black text-[#12066a] tracking-tighter ">
-                The 7 Core Pillars of{" "}
+                The 8 Core Pillars of{" "}
                 <span className="text-[#997819]">SIA ACS Compliance </span>
               </h2>
             </FadeIn>

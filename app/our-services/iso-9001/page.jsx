@@ -2,13 +2,21 @@ import React from "react";
 import Image from "next/image";
 import FadeIn from "@/components/MotionWrapper";
 import {
-  Award,
-  Target,
-  Zap,
   CheckCircle2,
   BarChart3,
-  Settings2,
+  Settings2Icon,
+  TrendingUp,
+  Activity,
+  RefreshCw,
+  Users,
+  Briefcase,
 } from "lucide-react";
+
+export const metadata = {
+  title: "ISO 9001 Certification UK | BizGrow Holdings Quality Solutions",
+  description:
+    "Achieve ISO 9001 certification with BizGrow Holdings. Expert guidance, audits & compliance support for UK businesses.",
+};
 
 const ISO9001Page = () => {
   return (
@@ -69,37 +77,37 @@ const ISO9001Page = () => {
           <div className="flex flex-col md:flex-row gap-16 items-start">
             <div className="md:w-1/3 sticky top-32">
               <h2 className="text-4xl md:text-6xl font-black text-[#12066a] tracking-tighter leading-none">
-                Beyond the <br />{" "}
-                <span className="text-[#997819]">Checklist.</span>
+                Main Benefits of ISO 9001 <br />{" "}
+                <span className="text-[#997819]">Certification.</span>
               </h2>
               <p className="mt-8 text-zinc-500 font-medium text-lg leading-relaxed">
-                ISO 9001 is the world’s most recognized Quality Management
-                System (QMS) standard. We help you implement it to drive real
-                business growth.
+                ISO 9001 Certification represents your commitment to high
+                standards for your organisation, providing a strong platform for
+                improvement, confidence, and efficiency.
               </p>
             </div>
 
             <div className="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
-                  t: "Process Optimization",
-                  d: "Eliminate wasted time and resources to create seamless, efficient workflows.",
-                  icon: <Settings2 />,
+                  t: "Higher Quality Control",
+                  d: " Consistent products and services that meet UK standards.",
+                  icon: <Settings2Icon size={28} strokeWidth={1.5} />, // Settings2 for control/mechanisms
                 },
                 {
-                  t: "Risk Management",
-                  d: "Identify potential business risks early and implement effective solutions.",
-                  icon: <Zap />,
+                  t: "More Market Opportunities",
+                  d: "Increased potential for gaining higher-value contracts and tenders.",
+                  icon: <TrendingUp size={28} strokeWidth={1.5} />, // TrendingUp for growth and market potential
                 },
                 {
-                  t: "Global Credibility",
-                  d: "Enhance your brand's trust and value on an international professional scale.",
-                  icon: <Award />,
+                  t: "Increased Efficiency",
+                  d: "More streamlined internal processes and fewer errors in the process.",
+                  icon: <Activity size={28} strokeWidth={1.5} />, // Activity or Gauge for smooth flow/efficiency
                 },
                 {
-                  t: "Customer Retention",
-                  d: "Improved quality assurance leads to higher satisfaction and repeat clients.",
-                  icon: <Target />,
+                  t: "Continuous improvement cycle",
+                  d: "Fostering a culture of regular service delivery and innovation.",
+                  icon: <RefreshCw size={28} strokeWidth={1.5} />, // RefreshCw for the "cycle" and continuous nature
                 },
               ].map((item, i) => (
                 <div
@@ -136,41 +144,43 @@ const ISO9001Page = () => {
               <span className="text-[#997819] font-black uppercase tracking-[0.4em] text-xs mb-4 block">
                 Market Leadership
               </span>
-              <h2 className="text-4xl md:text-6xl font-black text-[#12066a] tracking-tighter leading-[0.9] mb-8">
+              <h2 className="text-4xl md:text-6xl font-black text-[#12066a] tracking-normal leading-[1] mb-8">
                 Why ISO 9001 is <br />
-                <span className="text-[#997819]">Non-Negotiable</span> <br />
-                in 2024.
+                <span className="text-[#997819]">Essential </span>
+                for UK Businesses Today.
               </h2>
 
               <div className="space-y-8">
                 <div className="flex gap-6 group">
                   <div className="w-16 h-16 shrink-0 bg-zinc-50 rounded-2xl flex items-center justify-center text-[#997819] group-hover:bg-[#12066a] group-hover:text-white transition-all duration-500 shadow-sm">
-                    <Award size={32} />
+                    <Briefcase size={32} />
                   </div>
                   <div>
                     <h4 className="text-xl font-black text-[#12066a] mb-2 uppercase tracking-tight">
-                      Tier-1 Supply Chain Access
+                      ACCESS TO HIGH-VALUE CONTRACTS
                     </h4>
                     <p className="text-zinc-500 font-medium leading-relaxed">
-                      Top UK construction and security firms exclusively onboard
-                      contractors with verified ISO 9001 certification. It is a
-                      mandatory requirement for high-value tenders.
+                      Leading UK construction and security clients prioritise
+                      suppliers with certified ISO 9001 systems. It is often a
+                      baseline requirement for tender eligibility and framework
+                      approvals..
                     </p>
                   </div>
                 </div>
 
                 <div className="flex gap-6 group">
                   <div className="w-16 h-16 shrink-0 bg-zinc-50 rounded-2xl flex items-center justify-center text-[#997819] group-hover:bg-[#12066a] group-hover:text-white transition-all duration-500 shadow-sm">
-                    <Target size={32} />
+                    <Users size={32} />
                   </div>
                   <div>
                     <h4 className="text-xl font-black text-[#12066a] mb-2 uppercase tracking-tight">
-                      Commercial Risk Mitigation
+                      IMPROVED CLIENT CONFIDENCE
                     </h4>
                     <p className="text-zinc-500 font-medium leading-relaxed">
-                      We align your internal processes to strive for a 0% error
-                      rate, safeguarding both your operational time and
-                      financial resources.
+                      A certified Quality Management System demonstrates
+                      reliability, accountability, and commitment to continuous
+                      improvement, key factors for long-term client
+                      relationships.
                     </p>
                   </div>
                 </div>
@@ -182,23 +192,26 @@ const ISO9001Page = () => {
                 <div className="bg-[#12066a] rounded-[3rem] p-12 text-center relative overflow-hidden">
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#997819] to-transparent opacity-50" />
 
-                  <h3 className="text-white font-black text-2xl mb-10 tracking-tight italic">
-                    Our Compliance Promise
+                  <h3 className="text-white font-black text-2xl mb-10 tracking-tight ">
+                    Our ISO 9001 Support Promise
                   </h3>
                   <div className="space-y-6">
                     {[
-                      "Fast-Track Certification Support",
-                      "Bespoke QMS Manual Development",
-                      "Zero-Stress External Audit Liaison",
-                      "Full Staff Competency Training",
+                      "Accelerated certification guidance with minimal disruption",
+                      "Tailored QMS documentation aligned to real operations",
+                      "End-to-end audit coordination and assessor support",
+                      "Practical staff awareness and compliance training",
                     ].map((item, idx) => (
                       <div
                         key={idx}
-                        className="py-4 border-b border-white/10 text-blue-100/80 font-bold flex justify-between items-center group cursor-default"
+                        className="py-4 border-b border-white/10 text-blue-100/80 font-bold flex justify-between items-start gap-4 group cursor-default"
                       >
-                        <span>{item}</span>
+                        {/* text-left ensure karega ke multi-line text bhi left se shuru ho */}
+                        <span className="text-left leading-tight">{item}</span>
+
+                        {/* shrink-0 isliye taake icon text ke dabao mein chota na ho */}
                         <CheckCircle2
-                          className="text-[#997819]  transition-opacity"
+                          className="text-[#997819] shrink-0 mt-1"
                           size={20}
                         />
                       </div>
@@ -215,8 +228,8 @@ const ISO9001Page = () => {
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-6xl font-black text-[#12066a] tracking-tighter ">
-              From Gap Analysis to{" "}
+            <h2 className="text-4xl md:text-5xl font-black text-[#12066a] tracking-tighter ">
+              From Assessment to ISO 9001{" "}
               <span className="text-[#997819]">Certification.</span>
             </h2>
           </div>
@@ -225,30 +238,30 @@ const ISO9001Page = () => {
             {[
               {
                 n: "01",
-                t: "Context Review",
-                d: "Thoroughly understanding your unique business environment and operational requirements.",
+                t: "Business Context Review",
+                d: "We review your organisation, sector needs, and current practices to align your system with UK quality requirements.",
               },
               {
                 n: "02",
-                t: "Process Mapping",
-                d: "Documenting core workflows to identify and rectify efficiency gaps.",
+                t: "Process & System Alignment",
+                d: "Core processes are refined to improve efficiency and meet ISO 9001 standards without operational disruption.",
               },
               {
                 n: "03",
-                t: "Internal Audit",
-                d: "Rigorous system testing to ensure compliance before the final certification audit.",
+                t: "Internal Audit & Readiness Check",
+                d: "Your system is checked against ISO 9001 to fix gaps before the certification audit.",
               },
               {
                 n: "04",
-                t: "Final Award",
-                d: "Expert guidance through the external audit to secure your ISO 9001 accreditation.",
+                t: "Certification & Audit Support",
+                d: "We guide you through the external audit and support you until ISO 9001 certification is achieved.",
               },
             ].map((step, i) => (
               <div
                 key={i}
                 className="p-8 bg-zinc-50 rounded-[2rem] border border-zinc-100 hover:bg-[#12066a] group transition-all duration-500"
               >
-                <span className="text-5xl font-black text-[#997819]/20 group-hover:text-[#997819] transition-colors">
+                <span className="text-5xl font-black text-[#997819]/60 group-hover:text-[#997819] transition-colors">
                   {step.n}
                 </span>
                 <h4 className="text-xl font-black text-[#12066a] group-hover:text-white mt-6 mb-3">
@@ -274,18 +287,20 @@ const ISO9001Page = () => {
                   <span className="text-[#997819]">Documentation</span>
                 </h3>
                 <p className="text-zinc-500 font-medium mb-10 max-w-md">
-                  We develop a comprehensive Management System for your
-                  business, including these essential professional standards:
+                  We design and implement a structured ISO 9001 Quality
+                  Management System tailored to your UK business operations,
+                  covering all mandatory documentation required for
+                  certification:
                 </p>
 
                 <div className="grid sm:grid-cols-1 gap-4">
                   {[
-                    "Quality Policy & Objectives",
-                    "Standard Operating Procedures (SOPs)",
-                    "Management Review Records",
-                    "Non-Conformance & Actions",
-                    "Supplier Evaluation Records",
-                    "Staff Training Matrix",
+                    "Quality Policy & Measurable Objectives",
+                    "Documented Procedures & SOPs",
+                    "Management Review & Performance Records",
+                    "Non-Conformity, Corrective & Preventive Actions",
+                    "Approved Supplier & Contractor Assessments",
+                    "Staff Competency & Training Records",
                   ].map((doc, idx) => (
                     <div
                       key={idx}
@@ -398,7 +413,7 @@ const ISO9001Page = () => {
               backgroundImage: 'url("/essentials.jpg")',
               backgroundSize: "cover",
               backgroundPosition: "center",
-              backgroundAttachment: "fixed"
+              backgroundAttachment: "fixed",
             }}
           >
             <div className="absolute inset-0 bg-[#12066a]/60 z-0" />
