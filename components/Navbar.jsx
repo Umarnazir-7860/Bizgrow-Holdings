@@ -34,7 +34,7 @@ export default function Navbar() {
   {
     title: "SIA ACS",
     description: "Approved Contractor Scheme consultancy for security firms.",
-    href: "/sia-acs",
+    href: "/our-services/sia-acs",
     icon: <ShieldCheck />,
   },
   {
