@@ -107,9 +107,9 @@ const ConstructionlinePage = () => {
                   <div className="w-14 h-14 bg-zinc-50 rounded-2xl flex items-center justify-center text-[#12066a] group-hover:bg-[#12066a] group-hover:text-white transition-all duration-500 mb-8">
                     {tier.icon}
                   </div>
-                  <h4 className="text-3xl font-black text-[#12066a] mb-2">
+                  <h3 className="text-3xl font-black text-[#12066a] mb-2">
                     {tier.level}
-                  </h4>
+                  </h3>
                   <p className="text-zinc-700 font-medium text-sm">
                     {tier.desc}
                   </p>
@@ -267,9 +267,9 @@ const ConstructionlinePage = () => {
                   <div key={idx} className="flex gap-6 group">
                     <div className="shrink-0 w-2 h-2 rounded-full bg-[#997819] mt-3 group-hover:scale-150 transition-transform" />
                     <div>
-                      <h4 className="font-black text-[#12066a] text-lg uppercase">
+                      <h3 className="font-black text-[#12066a] text-lg uppercase">
                         {item.t}
-                      </h4>
+                      </h3>
                       <p className="text-zinc-500 font-medium">{item.d}</p>
                     </div>
                   </div>
