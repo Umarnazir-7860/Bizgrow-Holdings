@@ -3,7 +3,6 @@ import Image from "next/image";
 import FadeIn from "@/components/MotionWrapper";
 import {
   ShieldCheck,
-  Lock,
   Zap,
   CheckCircle2,
   Server,
@@ -120,9 +119,9 @@ const CyberEssentialsPage = () => {
                   } transition-transform hover:-translate-y-2 duration-500`}
                 >
                   <div className="mb-6 text-[#997819]">{item.icon}</div>
-                  <h4 className="text-2xl font-black mb-4 tracking-tight italic uppercase">
+                  <h3 className="text-2xl font-black mb-4 tracking-tight italic uppercase">
                     {item.t}
-                  </h4>
+                  </h3>
                   <p
                     className={`${
                       i % 2 === 0 ? "text-zinc-500" : "text-blue-100/60"
@@ -232,9 +231,9 @@ const CyberEssentialsPage = () => {
                 <span className="text-5xl font-black text-[#997819]/20 group-hover:text-[#997819] transition-colors">
                   {step.n}
                 </span>
-                <h4 className="text-xl font-black text-[#12066a] group-hover:text-white mt-6 mb-3 uppercase tracking-tighter">
+                <h3 className="text-xl font-black text-[#12066a] group-hover:text-white mt-6 mb-3 uppercase tracking-tighter">
                   {step.t}
-                </h4>
+                </h3>
                 <p className="text-zinc-500 group-hover:text-blue-100/60 text-sm font-medium">
                   {step.d}
                 </p>
@@ -292,7 +291,7 @@ const CyberEssentialsPage = () => {
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-[#12066a] p-8 rounded-[2rem] text-white shadow-xl">
                   <p className="text-3xl font-black leading-none text-[#997819]">
-                    80%
+                    100%
                   </p>
                   <p className="text-[10px] uppercase font-bold opacity-80">
                     Threat Reduction
